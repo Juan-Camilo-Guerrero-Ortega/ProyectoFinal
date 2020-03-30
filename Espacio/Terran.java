@@ -8,32 +8,12 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Terran extends Especies
 {
+    /**
+     * Act - do whatever the Terran wants to do. This method is called whenever
+     * the 'Act' or 'Run' button gets pressed in the environment.
+     */
     public void act() 
     {
-        
-        move(6);
-        
-        if (Greenfoot.getRandomNumber(100) < 10)
-        {
-            turn(Greenfoot.getRandomNumber (40)-20);
-        }
-        
-        if (getX() <=5 || getX() >= getWorld().getWidth()-5)
-        {
-           turn(180); 
-        }
-        
-        if (getY() <=5 || getY() >= getWorld().getWidth()-5)
-        {
-           turn(180); 
-        }
-        
-    }
-    
-     
-    
+        // Add your action code here.
+    }    
 }
-
-    
-    
-
