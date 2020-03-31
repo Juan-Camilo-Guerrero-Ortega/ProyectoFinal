@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Zerg extends Especies
+public class Zerg extends Zespecies
 {
     /**
      * Act - do whatever the Zerg wants to do. This method is called whenever

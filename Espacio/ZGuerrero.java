@@ -1,19 +1,47 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class ZGuerrero here.
+ * Write a description of class Zguerrero here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class ZGuerrero extends Zerg
+
+//Para mover al guerrero de la especie zerg utilice las flechas 
+
+public class Zguerrero extends Zerg
 {
+    
     /**
-     * Act - do whatever the ZGuerrero wants to do. This method is called whenever
+     * Act - do whatever the Zguerrero wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act() 
     {
-        // Add your action code here.
-    }    
-}
+        int y= getY();
+       
+        if(Greenfoot.isKeyDown("right"))
+        {
+            move(4); 
+        }
+        if(Greenfoot.isKeyDown("left"))
+        {
+            move(-4); 
+        }
+        if(Greenfoot.isKeyDown("up"))
+        {
+            y--; 
+        }
+        if(Greenfoot.isKeyDown("down"))
+        {
+            y++; 
+        }
+        setLocation(getX(),y);
+        
+      
+    }
+    
+    
+}    
+
+

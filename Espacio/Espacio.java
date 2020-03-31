@@ -16,7 +16,7 @@ public class Espacio extends World
     public Espacio()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(10, 10, 40);
+        super(600, 400, 2); 
         
-     }
+    }
 }
