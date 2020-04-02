@@ -1,9 +1,21 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 
+
  public class Zconstructor extends Zerg
 {
-  
+/**
+ * Write a description of class Zconstructor here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+public class ZConstructor extends Zerg
+{
+    /**
+     * Act - do whatever the Zconstructor wants to do. This method is called whenever
+     * the 'Act' or 'Run' button gets pressed in the environment.
+     */
     public void act() 
     {
         int y= getY();
@@ -26,4 +38,5 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
         }
         setLocation(getX(),y);
     }  
+}
 }

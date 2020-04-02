@@ -1,11 +1,16 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-
-
-
- 
- public class Zmedico extends Zerg
+/**
+ * Write a description of class Zmedico here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+public class ZMedico extends Zerg
 {
-    
+    /**
+     * Act - do whatever the Zmedico wants to do. This method is called whenever
+     * the 'Act' or 'Run' button gets pressed in the environment.
+     */
     public void act() 
     {
         int y= getY();
