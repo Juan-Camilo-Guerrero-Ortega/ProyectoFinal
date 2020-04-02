@@ -2,7 +2,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 
 
- /** 
+ 
  public class Zmedico extends Zerg
 {
     
@@ -29,4 +29,4 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
         setLocation(getX(),y);
     }   
 }
-*/
+

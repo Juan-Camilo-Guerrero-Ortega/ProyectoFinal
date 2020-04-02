@@ -5,11 +5,10 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 
 //Para mover al guerrero de la especie zerg utilice las flechas 
-
-/** 
+ 
  
   
- * public class Zguerrero extends Zerg
+ public class Zguerrero extends Zerg
 {
     
     
@@ -39,6 +38,6 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
     }
     
     
-}    */
+}    
 
 

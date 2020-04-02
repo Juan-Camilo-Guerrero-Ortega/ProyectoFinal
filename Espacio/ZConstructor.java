@@ -1,9 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 
-/**
-  
- * public class Zconstructor extends Zerg
+ public class Zconstructor extends Zerg
 {
   
     public void act() 
@@ -28,4 +26,4 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
         }
         setLocation(getX(),y);
     }  
-}*/
+}
