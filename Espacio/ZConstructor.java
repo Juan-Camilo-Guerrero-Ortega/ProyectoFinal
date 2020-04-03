@@ -2,8 +2,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 
 
- public class Zconstructor extends Zerg
-{
+
 /**
  * Write a description of class Zconstructor here.
  * 
@@ -20,7 +19,7 @@ public class ZConstructor extends Zerg
     {
         int y= getY();
        
-        if(Greenfoot.isKeyDown("9"))
+        if(Greenfoot.isKeyDown("g"))
         {
             move(4); 
         }
@@ -39,4 +38,4 @@ public class ZConstructor extends Zerg
         setLocation(getX(),y);
     }  
 }
-}
+

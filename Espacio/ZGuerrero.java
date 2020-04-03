@@ -1,12 +1,5 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
-/**
- * Write a description of class Zguerrero here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
-
 //Para mover al guerrero de la especie zerg utilice las flechas 
 
  

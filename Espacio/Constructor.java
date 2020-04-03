@@ -1,39 +1,124 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-
+import java.util.List;
 /**
- * Write a description of class Constructor here.
+ * Write a description of class Especies here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
 public class Constructor extends Terran
 {
-    //Para mover al guerrero de la especie terran utilice las T(arriba) G(abajo) F(izq) H(der)
+   // private static final int EAST=0;
+    // private static final int WEST=1;
+     //private static final int NORTH=2;
+     //private static final int SOUTH=3;
     
-    /**
-     * Act - do whatever the Constructor wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
-    public void act() 
-    {
+    //private int direction;
+    //public Zespecies(){
+    // setDirection(EAST);
+    
+   // }
+    public void act(){
+      //setDirection(Greenfoot.getRandomNumber(4));
+      //move();
+      //setDirection(EAST);
+       if(Greenfoot.isKeyDown("down")){
+        setLocation(getX(),getY()+1);
+        }
+       if(Greenfoot.isKeyDown("right")){
+        setLocation(getX()+1,getY());
+       }
+        if(Greenfoot.isKeyDown("up")){
+        setLocation(getX(),getY()-1);
+       }
+        if(Greenfoot.isKeyDown("left")){
+        setLocation(getX()-1,getY());
+       }
+    
+    
+    }
+    /**public void move(){
+      if (!canMove()){
+      return;
+      }
+      switch(direction){
+        case SOUTH:
+        setLocation(getX(),getY()+1);
+        break;
+        case EAST:
+        setLocation(getX()+1,getY());
+        break;
+        case NORTH:
+        setLocation(getX(),getY()-1);
+        break;
+        case WEST:
+        setLocation(getX()-1,getY());
+        break;
+    
+      }
+    }
+    //clase donde pregunta si puede ir hacia adelante, si sí, se mueve hacia adelante, si no,se mueve a otro lado
+    public boolean canMove(){
+        World myWorld=getWorld();
+        int x= getX();
         int y= getY();
-       
-        if(Greenfoot.isKeyDown("h"))
-        {
-            move(4); 
+         switch(direction){
+           case SOUTH:
+           y++;
+           break;
+           case EAST:
+           x++;
+           break;
+           case NORTH:
+           y--;
+           break;
+           case WEST:
+           x--;
+           break;
         }
-        if(Greenfoot.isKeyDown("f"))
-        {
-            move(-4); 
+        //test for outside border
+        if(x>=myWorld.getWidth() || y>=myWorld.getHeight()) {
+          return false;
         }
-        if(Greenfoot.isKeyDown("t"))
-        {
-            y--; 
+        else if(x<0 || y<0) {
+          return false;
         }
-        if(Greenfoot.isKeyDown("g"))
-        {
-            y++; 
-        }
-        setLocation(getX(),y);
-    }   
+        return true;
+    }
+    //turns toward left
+    public void turnLeft(){
+        switch(direction){
+        case SOUTH:
+        setDirection(EAST);
+        break;
+        case EAST:
+        setDirection(NORTH);
+        break;
+        case NORTH:
+        setDirection(WEST);
+        break;
+        case WEST:
+        setDirection(SOUTH);
+        break;
+       }
+    }
+    //direction where were are facing
+    public void setDirection(int direction){
+       this.direction=direction;
+        switch(direction){
+        case SOUTH:
+        setRotation(90);
+        break;
+        case EAST:
+        setRotation(0);
+        break;
+        case NORTH:
+        setRotation(270);
+        break;
+        case WEST:
+        setRotation(180);
+        break;
+       }
+    }*/
 }
+
