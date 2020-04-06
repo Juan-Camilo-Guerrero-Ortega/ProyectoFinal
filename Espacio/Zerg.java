@@ -6,10 +6,10 @@ public class Zerg extends Zespecies
     private static final int WEST=1;
     private static final int NORTH=2;
     private static final int SOUTH=3;
-    //private static final int NORTHEAST=4;
-    //private static final int NORTHWEST=5;
-    //private static final int SOUTHWEST=6;
-    //private static final int SOUTHEAST=7;
+    private static final int NORTHEAST=4;
+    private static final int NORTHWEST=5;
+    private static final int SOUTHWEST=6;
+    private static final int SOUTHEAST=7;
   
     
     private int direction;

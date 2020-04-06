@@ -8,36 +8,38 @@ import java.util.List;
  */
 public class Constructor extends Terran
 {
-   // private static final int EAST=0;
-    // private static final int WEST=1;
-     //private static final int NORTH=2;
-     //private static final int SOUTH=3;
+   private static final int EAST=0;
+   private static final int WEST=1;
+   private static final int NORTH=2;
+   private static final int SOUTH=3;
     
-    //private int direction;
-    //public Zespecies(){
-    // setDirection(EAST);
-    
-   // }
-    public void act(){
-      //setDirection(Greenfoot.getRandomNumber(4));
-      //move();
-      //setDirection(EAST);
-       if(Greenfoot.isKeyDown("down")){
-        setLocation(getX(),getY()+1);
-        }
-       if(Greenfoot.isKeyDown("right")){
-        setLocation(getX()+1,getY());
-       }
-        if(Greenfoot.isKeyDown("up")){
-        setLocation(getX(),getY()-1);
-       }
-        if(Greenfoot.isKeyDown("left")){
-        setLocation(getX()-1,getY());
-       }
-    
+   private int direction;
+   public void Especies(){
+    setDirection(EAST);
     
     }
-    /**public void move(){
+    public void act(){
+      setDirection(Greenfoot.getRandomNumber(4));
+      move();
+      setDirection(EAST);
+    
+       if(Greenfoot.isKeyDown("g")){
+        setLocation(getX(),getY()+1);
+        }
+       if(Greenfoot.isKeyDown("h")){
+        setLocation(getX()+1,getY());
+       }
+        if(Greenfoot.isKeyDown("t")){
+        setLocation(getX(),getY()-1);
+       }
+        if(Greenfoot.isKeyDown("f")){
+        setLocation(getX()-1,getY());
+       }
+       
+    
+    }
+    
+    public void move(){
       if (!canMove()){
       return;
       }
@@ -54,8 +56,8 @@ public class Constructor extends Terran
         case WEST:
         setLocation(getX()-1,getY());
         break;
-    
       }
+      
     }
     //clase donde pregunta si puede ir hacia adelante, si sí, se mueve hacia adelante, si no,se mueve a otro lado
     public boolean canMove(){
@@ -76,6 +78,7 @@ public class Constructor extends Terran
            x--;
            break;
         }
+        
         //test for outside border
         if(x>=myWorld.getWidth() || y>=myWorld.getHeight()) {
           return false;
@@ -84,6 +87,7 @@ public class Constructor extends Terran
           return false;
         }
         return true;
+        
     }
     //turns toward left
     public void turnLeft(){
@@ -100,7 +104,8 @@ public class Constructor extends Terran
         case WEST:
         setDirection(SOUTH);
         break;
-       }
+        }
+        
     }
     //direction where were are facing
     public void setDirection(int direction){
@@ -119,6 +124,8 @@ public class Constructor extends Terran
         setRotation(180);
         break;
        }
-    }*/
+       
+    }
+    
 }
 
