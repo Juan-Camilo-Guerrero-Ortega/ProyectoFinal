@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.target=Counter
+comment1.params=
+comment1.target=Counter()
+comment2.params=prefix
+comment2.target=Counter(java.lang.String)
+comment2.text=\r\n\ Crear\ un\ nuevo\ contador,\ inicializando\ en\ 0\r\n
+comment3.params=
+comment3.target=void\ act()
+comment3.text=\r\n\ Anime\ la\ pantalla\ para\ que\ cuente\ hacia\ arriba\ (o\ hacia\ abajo)\r\n\ hasta\ el\ valor\ de\ destino\ actual.\r\n
+comment4.params=score
+comment4.target=void\ add(int)
+comment4.text=\r\n\ Agregue\ una\ nueva\ puntuaci\u00F3n\ al\ valor\ del\ contador\ actual.\ \r\n\ Esto\ animar\u00E1\ el\ contador\ sobre\ fotogramas\ consecutivos\ hasta\ que\ alcance\ el\ nuevo\ valor.\ \r\n
+comment5.params=
+comment5.target=int\ getValue()
+comment5.text=\r\n\ Devuelve\ el\ valor\ del\ contador\ actual.\r\n
+comment6.params=newValue
+comment6.target=void\ setValue(int)
+comment6.text=\r\n\ Establezca\ un\ nuevo\ valor\ de\ contador.\ Esto\ no\ animar\u00E1\ el\ contador.\r\n
+comment7.params=prefix
+comment7.target=void\ setPrefix(java.lang.String)
+comment7.text=\r\n\ Establezca\ un\ nuevo\ valor\ de\ contador.\ Esto\ no\ animar\u00E1\ el\ contador\r\n\ el\ valor\ del\ contador\ (por\ ejemplo,\ "Puntuaci\u00F3n\:\ ").\r\n
+comment8.params=
+comment8.target=void\ updateImage()
+comment8.text=\r\n\ Actualice\ la\ imagen\ en\ pantalla\ para\ mostrar\ el\ valor\ actual.\r\n
+numComments=9
