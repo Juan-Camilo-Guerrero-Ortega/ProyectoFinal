@@ -70,8 +70,8 @@ public class Counter extends Actor
     }
     
     /**
-     * Establezca un nuevo valor de contador. Esto no animará el contador
-     * el valor del contador (por ejemplo, "Puntuación: ").
+     * String Establece un prefix de texto que debe mostrarse antes 
+     * del valor del contador (por ejemplo, "Score: ")
      */
     public void setPrefix(String prefix)
     {
